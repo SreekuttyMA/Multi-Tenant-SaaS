@@ -1,0 +1,9 @@
+django 
+djangorestframework 
+psycopg2-binary
+djangorestframework-simplejwt
+django-filter
+redis 
+django-redis
+pytest 
+pytest-django
