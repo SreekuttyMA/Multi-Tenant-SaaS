@@ -1,7 +1,9 @@
 Multi-Tenant SaaS Platform
+
 A Django-based multi-tenant SaaS application supporting user accounts, project management, and role-based permissions.
 
 **Features**
+
 Multi-tenant architecture
 User authentication and management
 Project CRUD operations
@@ -10,6 +12,7 @@ RESTful API (Django REST Framework)
 Redis caching
 
 **Project Structure**
+
 saas_project – Main Django project
 core/ – Settings, URLs, WSGI/ASGI
 accounts/ – User and authentication logic
@@ -18,30 +21,34 @@ env – Python virtual environment
 
 **Setup**
 
-Clone the repository
+1. Clone the repository
+
 git clone <repo-url>
 cd Multi-Tenant-SaaS
 
-Create and activate virtual environment
-python -m venv env
-# Windows
-env\Scripts\activate
-# macOS/Linux
-source env/bin/activate
+2. Create and activate virtual environment
 
-Install dependencies
+python -m venv env
+Windows - env\Scripts\activate
+macOS/Linux - source env/bin/activate
+
+3. Install dependencies
+   
 pip install -r requirements.txt
 
-Apply migrations
+4. Apply migrations
+   
 cd saas_project
 python manage.py migrate
 
-Run the development server
+5. Run the development server
+   
 python manage.py runserver
 
 
 
 **Usage**
+
 Access the app at http://127.0.0.1:8000/
 Use Django admin at /admin/
 API endpoints available under /api/
